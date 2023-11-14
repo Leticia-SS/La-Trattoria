@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Droid";
+  src: url("DroidSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("GreatVibes-Regular.ttf");
+}
+
+:root{
+  --branco: #F1F2F1;
+  --vermelho: #781D00;
+  --verde: #026736;
+  --preto: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .MenuPc{
+    display: none;
+  } /* Barra de navegação do Desktop */
+.MenuMobile{
+  display: block;
+} /* Barra de navegação do Mobile */
+
+.logo{
+  width: 60px;
+} /* Logo do restaurante */
+
+#logoHome{
+  width: 50%;
+} /* Logo do restaurante da página inicial*/
+
+.icone{
+  width: 35px;
+} /* Icone do Menu Mobile */
+
+#frameHome{
+  height: 300px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("imagens/pizzaHome.png");
+  background-size: cover;
+} /* Página Inicial do site */
+
+  }/* Mobile */
+
+  @media only screen and (min-width: 600px) {
+
+.divLogo{
+  display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+  .logo{
+    width: 120px;
+  }
+
+  #divHeader{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    border: black 2px;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  .MenuMobile{
+    display: none;
+  }
+
+  .MenuPc{
+    display: block;
+  }
+
+    } /* Desktop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
