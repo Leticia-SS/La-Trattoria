@@ -28,15 +28,54 @@
 .MenuMobile{
   display: block;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
+  justify-content: right;
+  align-items: end;
+  flex-direction: column;
+  gap: 5px;
 } /* Barra de nav do Mobile */
 
 .logo{
   width: 60px;
 } /* Logo do restaurante */
+
+.divLogo{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 5px;
+} /* Div da Logo e icone do Menu Mobile do restaurante */
+
+ul  li.MenuItemMobile{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+} /* Div do Menu Mobile do restaurante */
+
+
+#divSideMenu{
+  position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60vw;
+    height: fit-content;
+    gap: 20px;
+    padding: 15px;
+    background-color: var(--verde);
+}
+
+a{
+  text-decoration: none;
+  font-family: 'GreatVibes';
+  color: var(--branco);
+  font-size: 30px;
+}
 
 #logoHome{
   width: 50%;
