@@ -21,6 +21,10 @@
   --preto: #000000;
 }
 
+body{
+  background-color: var(--branco);
+}
+
 @media only screen and (max-width: 600px) {
   .MenuPc{
     display: none;
@@ -63,7 +67,7 @@ ul  li.MenuItemMobile{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    width: 60vw;
+    width: fit-content;
     height: fit-content;
     gap: 20px;
     padding: 15px;
@@ -96,7 +100,7 @@ a{
 } /* Página Inicial do site */
 
 .iconMedia{
-  width: 50px;
+  width: 40px;
 } /* Icones Redes Sociais */
 
   }/* Mobile */
