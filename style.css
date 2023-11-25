@@ -24,10 +24,15 @@
 @media only screen and (max-width: 600px) {
   .MenuPc{
     display: none;
-  } /* Barra de navegação do Desktop */
+  } /* Barra de nav do Desktop */
 .MenuMobile{
   display: block;
-} /* Barra de navegação do Mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+} /* Barra de nav do Mobile */
 
 .logo{
   width: 60px;
@@ -50,6 +55,10 @@
   background: url("imagens/pizzaHome.png");
   background-size: cover;
 } /* Página Inicial do site */
+
+.iconMedia{
+  width: 50px;
+} /* Icones Redes Sociais */
 
   }/* Mobile */
 
