@@ -10,12 +10,20 @@
 <body>
     <header>
         <div id="divHeader">
-            <div class="divLogo">
-        <img class="logo" src="imagens/logoPNG.png" alt="logo" title="La Trattoria del Cuore">
-    </div>
         <nav class="MenuMobile">
-            <img class="icone" src="imagens/iconMenu.png" alt="icon" title="Menu">
-            <div id="MenuMobile">
+            <div class="divLogo">
+                <img class="logo" src="imagens/logoPNG.png" alt="logo" title="La Trattoria del Cuore">
+                <img class="icone" src="imagens/iconMenu.png" alt="icon" title="Menu" onclick="Menu()">
+            </div>
+            
+            <div id="divSideMenu">
+                <span><i id="closeSideMenu" class="fa-solid fa-x" style="color: #f1f2f1;"></i></span>
+                <div class="divIconMenuMobile">
+                    <img src="imagens/tiktok.png" alt="icon" class="iconMedia" title="TikTok">
+                    <img src="imagens/instagram.png" alt="icon" class="iconMedia" title="Instagram">
+                    <img src="imagens/facebook.png" alt="icon" class="iconMedia" title="Facebook">
+                     <img src="imagens/whatsapp.png" alt="icon" class="iconMedia" title="WhatsApp">
+                </div>
                 <ul>
                     <li class="MenuItemMobile"><a href="index.html">Início</a></li>
                     <li class="MenuItemMobile"><a href="cardapio.html">Cardápio</a></li>
@@ -23,9 +31,10 @@
                     <li class="MenuItemMobile"><a href="#footer">Fale Conosco</a></li>
                 </ul>
             </div>
-        </nav> <!-- Aba Home Menu do Desktop -->
+        </nav> <!-- Aba Home Menu do Mobile -->
     
         <nav class="MenuPc">
+            
             
                 <ul>
                     <li class="MenuItemPc"><a href="index.html">Início</a></li>

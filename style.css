@@ -77,9 +77,10 @@ span{
   right: 15px;
 }
 
-img{
+.iconMedia{
   margin: 5px;
-}
+  width: 40px;
+} /* Icone redes sociais*/
 
 #divSideMenu{
     display: none;
@@ -101,7 +102,7 @@ a{
   font-family: 'GreatVibes';
   color: var(--branco);
   font-size: 30px;
-}
+} /* Link Menu */
 
 #logoHome{
   width: 50%;
@@ -113,7 +114,7 @@ a{
 
 #frameHome{
   height: 300px;
-  width: fit-content;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,9 +122,41 @@ a{
   background-size: cover;
 } /* Página Inicial do site */
 
-.iconMedia{
-  width: 40px;
-} /* Icones Redes Sociais */
+#frameInicio{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+
+#frameInicioContent{
+  width: 60vw;
+  margin: 10px 20px 10px 0;
+  align-items: flex-end;
+}
+
+h1{
+  margin: 10px;
+  font-family: 'GreatVibes';
+  font-size: 30px;
+  color: var(--preto);
+  font-weight: 500;
+}
+
+div#frameInicioContent p{
+  font-family: 'Droid';
+  font-size: 13px;
+  width: 50vw;
+}
+
+#bruschetta{
+  position: relative;
+  left: -40px;
+  top: -300px;
+  width: 230px;
+  
+}
 
   }/* Mobile */
 
