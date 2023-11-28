@@ -9,4 +9,14 @@ function Menu(){
     })
 }
 
-//
+// Redes Socias Abrir Link
+
+function redesSociais(x){
+    window.open(x,'_blank')
+}
+
+// Abrir botões de Acesse Aqui
+
+function btAcesso(x){
+    window.location.pathname = x
+}

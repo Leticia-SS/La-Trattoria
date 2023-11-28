@@ -224,7 +224,6 @@ div#frameCardapioTextos p{
 #botaoCardapio:active{
   box-shadow: var(--branco) 2px 2px 0 0;
   transform: translateY(2px) translateX(2px);
-
 }
 
   }/* Mobile */
