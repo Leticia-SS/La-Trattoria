@@ -150,6 +150,7 @@ h1{
 div#frameInicioContent p{
   font-family: 'Droid';
   font-size: 12px;
+  color: var(--preto);
 } /* Paragrafo do frame de Inicio (Nossa Essência) */
 
 #bruschetta{
@@ -217,14 +218,126 @@ div#frameCardapioTextos p{
   font-family: 'GreatVibes';
   color: var(--branco);
   background-color: var(--verde);
-  box-shadow: var(--branco) 4px 4px 0 0;
+  box-shadow: var(--preto) 4px 4px 0 0;
   border: none;
-}
+} /* Botao para pagina de Cardapio (Cardapio Executivo) */
 
 #botaoCardapio:active{
-  box-shadow: var(--branco) 2px 2px 0 0;
+  box-shadow: var(--preto) 2px 2px 0 0;
   transform: translateY(2px) translateX(2px);
-}
+} /* Animação botão Cardapio (Cardapio Executivo) */
+
+#ravioli{
+  width: 360px;
+  position: absolute;
+  top: 880px;
+  left: -120px;
+  z-index: 1;
+} /* Imagem do Inicio (Ravioli) */
+
+#frameReserva{
+  height: 260px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: right;
+  margin-bottom: 15px;
+} /* Frame de Reservas */
+
+#frameReservaConteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+} /* Frame do Conteudo da Reserva (Reserva) */
+
+#frameReservaTexto{
+  width: 65vw;
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  flex-direction: column;
+  margin: 10px 5px 10px 0;
+} /* Frame dos textos do Conteudo da Reserva (Reserva) */
+
+div#frameReservaTexto h2{
+  margin: 10px;
+  font-family: 'GreatVibes';
+  font-size: 30px;
+  color: var(--preto);
+  font-weight: 500;
+} /* Frame do titulo da Reserva (Reserva) */
+
+div#frameReservaTexto p{
+  font-family: 'Droid';
+  font-size: 12px;
+  color: var(--preto);
+} /* Frame do paragrafo da Reserva (Reserva) */
+
+#botaoReserva{
+  width: 100px;
+  height: 40px;
+  z-index: 2;
+  font-size: 20px;
+  font-family: 'GreatVibes';
+  color: var(--branco);
+  background-color: var(--vermelho);
+  box-shadow: var(--preto) 4px 4px 0 0;
+  border: none;
+} /* Frame do botao de Reserva (Reserva) */
+
+#botaoReserva:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+} /* Animação botão Reserva (Reserva) */
+
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  background-color: var(--verde);
+  color: var(--branco);
+  width: 100vw;
+  height:fit-content;
+} /* Footer (Footer) */
+
+.footerBoxConteudo{
+  width: 150px;
+  font-family: 'Droid';
+  margin: 15px 5px 15px 5px;
+  line-height: 20px;
+} /* Div conteudo do Footer (Footer) */
+
+div.footerBoxConteudo h3{
+  font-size: 12px;
+  font-family: 'Droid';
+} /* Div titulo do conteudo do Footer (Footer) */
+
+div.footerBoxConteudo p{
+  font-size: 10px;
+  font-family: 'Droid';
+} /* Div paragrafo do conteudo do Footer (Footer) */
+
+.divIconsFooter{
+  display: none;
+} /* Div icones redes sociais do Footer (Footer) */
+
+#footerLogo{
+  height: 120px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin: 5px;
+} /* Div logo do site no Footer (Footer) */
+
+.footerBoxTelefone{
+  width: 100px;
+} /* Div conteudo do Footer sobre Telefone (Footer) */
+
+
 
   }/* Mobile */
 
