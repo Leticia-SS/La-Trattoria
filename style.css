@@ -299,7 +299,6 @@ div#frameReservaTexto p{
   align-items: start;
   gap: 10px;
   color: var(--branco);
-  width: 100vw;
   height:fit-content;
 } /* Footer (Footer) */
 
@@ -325,7 +324,7 @@ div.footerBoxConteudo p{
 } /* Div icones redes sociais do Footer (Footer) */
 
 #footerLogo{
-  height: 120px;
+  height: 110px;
   display: flex;
   align-items: start;
   justify-content: start;
