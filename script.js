@@ -18,5 +18,5 @@ function redesSociais(x){
 // Abrir botões de Acesse Aqui
 
 function btAcesso(x){
-    window.location.pathname = x
+    window.location.href = x
 }
