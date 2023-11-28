@@ -1,13 +1,13 @@
 // Função de fechar e abrir Menu do Mobile
+let sidebarOpen = document.querySelector('#divSideMenu')
 function Menu(){
-    let sidebarOpen = document.querySelector('#divSideMenu')
     sidebarOpen.style.display = "flex"
-
-    let sidebarClose = document.getElementById('closeSideMenu')
-    sidebarClose.addEventListener('click', function(){
-        sidebarOpen.style.display = "none"
-    })
 }
+
+let sidebarClose = document.getElementById('closeSideMenu')
+sidebarClose.addEventListener('click', function(){
+    sidebarOpen.style.display = "none"
+})
 
 // Redes Socias Abrir Link
 

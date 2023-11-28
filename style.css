@@ -298,14 +298,13 @@ div#frameReservaTexto p{
   justify-content: start;
   align-items: start;
   gap: 10px;
-  background-color: var(--verde);
   color: var(--branco);
   width: 100vw;
   height:fit-content;
 } /* Footer (Footer) */
 
 .footerBoxConteudo{
-  width: 150px;
+  width: fit-content;
   font-family: 'Droid';
   margin: 15px 5px 15px 5px;
   line-height: 20px;
@@ -334,8 +333,15 @@ div.footerBoxConteudo p{
 } /* Div logo do site no Footer (Footer) */
 
 .footerBoxTelefone{
-  width: 100px;
+  width: fit-content;
 } /* Div conteudo do Footer sobre Telefone (Footer) */
+
+.verde{
+  background-color: var(--verde);
+}
+.vermelho{
+  background-color: var(--vermelho);
+}
 
 
 
