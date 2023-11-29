@@ -342,6 +342,23 @@ div.footerBoxConteudo p{
   background-color: var(--vermelho);
 }
 
+ /* PÁGINA CARDAPIO.HTML*/ 
+
+
+  /* PÁGINA RESERVA.HTML*/ 
+
+.frameReservaHome{
+  height: 300px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("imagens/beige-wooden-textured-flooring-background.jpg");
+  background-size: cover;
+  font-size: 60px;
+  font-family: 'GreatVibes';
+}
+
 
 
   }/* Mobile */
@@ -380,69 +397,3 @@ div.footerBoxConteudo p{
   }
 
     } /* Desktop */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
