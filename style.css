@@ -295,8 +295,9 @@ div#frameReservaTexto p{
 #footer{
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 5px;
   gap: 10px;
   color: var(--branco);
   height:fit-content;
