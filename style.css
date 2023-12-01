@@ -297,7 +297,7 @@ div#frameReservaTexto p{
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
-  gap: 10px;
+  gap: 5px;
   color: var(--branco);
   height:fit-content;
 } /* Footer (Footer) */
@@ -328,7 +328,7 @@ div.footerBoxConteudo p{
   display: flex;
   align-items: start;
   justify-content: start;
-  margin: 5px;
+  margin: 10px 0 0 5px;
 } /* Div logo do site no Footer (Footer) */
 
 .footerBoxTelefone{
