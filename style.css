@@ -355,10 +355,47 @@ div.footerBoxConteudo p{
   align-items: center;
   background: url("imagens/beige-wooden-textured-flooring-background.jpg");
   background-size: cover;
-  font-size: 60px;
   font-family: 'GreatVibes';
+} /* Frame Inicio da página (Reserva) */
+
+.frameReservaHome h1{
+  font-size: 60px;
 }
 
+#frameFormulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} /* Frame aba de Formulário e Mapa (Reserva) */
+
+#frameFormulario h2{
+  font-family: 'GreatVibes';
+  font-size: 30px;
+  color: var(--preto);
+  font-weight: 500;
+  margin: 15px;
+} /* Título aba de Formulário e Mapa (Reserva) */
+
+.reservaMapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} /*Div do Frame da Localização */
+
+.mapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:15px 0 15px 0;
+  width: 100vw;
+} /* Frame do Mapa */
+
+iframe{
+  width: 100%;
+  height: 300px;
+} /* Mapa incorporado */
 
 
   }/* Mobile */
