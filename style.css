@@ -135,7 +135,7 @@ a{
 
 #frameInicioContent{
   width: 65vw;
-  margin: 10px 5px 10px 0;
+  padding: 10px 10px 10px 0;
   align-items: flex-end;
 } /* Conteudo do frame de Inicio (Nossa Essência) */
 
@@ -186,13 +186,13 @@ div#frameInicioContent p{
 } /* Frame do Conteudo do Cardapio (Cardapio Executivo) */
 
 #frameCardapioTextos{
-  width: 60vw;
-  height: 150px;
+  width: 65vw;
+  padding: 10px 10px 10px 0;
+  height: 200px;
   display: flex;
   align-items: start;
   justify-content: end;
   flex-direction: column;
-  margin: 10px 0 10px 10px;;
 } /* Div dos textos do Conteudo do Cardapio (Cardapio Executivo) */
 
 div#frameCardapioTextos h2{
@@ -230,13 +230,13 @@ div#frameCardapioTextos p{
 #ravioli{
   width: 360px;
   position: absolute;
-  top: 880px;
+  top: 870px;
   left: -120px;
   z-index: 1;
 } /* Imagem do Inicio (Ravioli) */
 
 #frameReserva{
-  height: 260px;
+  height: 240px;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -254,11 +254,11 @@ div#frameCardapioTextos p{
 
 #frameReservaTexto{
   width: 65vw;
+  padding: 10px 10px 10px 0;
   display: flex;
   justify-content: right;
   align-items: start;
   flex-direction: column;
-  margin: 10px 5px 10px 0;
 } /* Frame dos textos do Conteudo da Reserva (Reserva) */
 
 div#frameReservaTexto h2{
@@ -413,16 +413,34 @@ iframe{
   }
 
   #divHeader{
-    box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     height: 80px;
     border: black 2px;
+    margin: 0 60px 0 60px;
   }
 
   ul{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+    font-family: 'GreatVibes';
+    color: var(--vermelho);
+    font-size: 30px;
+  }
+
+  li{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .MenuMobile{
@@ -430,16 +448,19 @@ iframe{
   }
 
   .MenuPc{
-    display: block;
+    display: flex;
   }
 
+  .logoMenuDesktop{
+    height: 80px;
+  }
   
 #logoHome{
-  width: 40%;
+  width: 500px;
 } /* Logo do restaurante da página inicial*/
 
 #frameHome{
-  height: 700px;
+  height: 900px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -449,17 +470,16 @@ iframe{
 } /* Página Inicial do site */
 
 #frameInicio{
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: space-around;
-  margin-bottom: 15px;
 } /* Frame de Inicio (Nossa Essência) */
 
 #frameInicioContent{
-  width: 50vw;
-  margin: 20px 35px 20px 0;
+  width: 55vw;
+  padding: 20px 80px 20px 0;
 } /* Conteudo do frame de Inicio (Nossa Essência) */
 
 h1{
@@ -479,7 +499,7 @@ div#frameInicioContent p{
 #bruschetta{
   width: 500px;
   position: absolute;
-  top: 850px;
+  top: 1050px;
   left: -60px;
   z-index: 1;
 } /* Imagem do Inicio (Bruschetta) */
@@ -487,7 +507,7 @@ div#frameInicioContent p{
 #vinho{
   height: 500px;
   position: absolute;
-  top: 1095px;
+  top: 1380px;
   right: 0;
   z-index: 1;
 } /* Imagem do Inicio (Vinho) */
@@ -504,16 +524,16 @@ div#frameInicioContent p{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 70px;
+  gap: 100px;
 } /* Frame do Conteudo do Cardapio (Cardapio Executivo) */
 
 #frameCardapioTextos{
-  width: 50vw;
-  margin: 20px 0 20px 80px;
+  width: 55vw;
+  padding: 20px 0 20px 80px;
   height: 300px;
   display: flex;
   align-items: start;
-  justify-content: end;
+  justify-content: center;
   flex-direction: column;
 } /* Div dos textos do Conteudo do Cardapio (Cardapio Executivo) */
 
@@ -550,15 +570,15 @@ div#frameCardapioTextos p{
 } /* Animação botão Cardapio (Cardapio Executivo) */
 
 #ravioli{
-  height: 500px;
+  height: 520px;
   position: absolute;
-  top: 1500px;
-  left: -250px;
+  top: 1870px;
+  left: -230px;
   z-index: 1;
 } /* Imagem do Inicio (Ravioli) */
 
 #frameReserva{
-  height: 380px;
+  height: 500px;
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
@@ -575,9 +595,9 @@ div#frameCardapioTextos p{
   display: flex;
   justify-content: right;
   align-items: start;
-  width: 50vw;
+  width: 55vw;
+  padding: 20px 80px 20px 0;
   flex-direction: column;
-  margin: 20px 40px 20px 0;
 } /* Frame dos textos do Conteudo da Reserva (Reserva) */
 
 div#frameReservaTexto h2{
@@ -644,7 +664,7 @@ div.footerBoxConteudo p{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   width: 200px;
   margin: 10px;
 } /* Div icones redes sociais do Footer (Footer) */
