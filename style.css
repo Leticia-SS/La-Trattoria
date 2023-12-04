@@ -712,14 +712,12 @@ div#frameReservaTexto p{
 .footerBoxConteudo{
   width: fit-content;
   font-family: 'Droid';
-  margin-bottom: 20px;
   line-height: 30px;
 } /* Div conteudo do Footer (Footer) */
 
 div.footerBoxConteudo h3{
   font-size: 20px;
   font-family: 'Droid';
-  margin-top: 20px;
 } /* Div titulo do conteudo do Footer (Footer) */
 
 div.footerBoxConteudo p{
@@ -747,9 +745,11 @@ div.footerBoxConteudo p{
 
 .verde{
   background-color: var(--verde);
+  padding: 10px;
 }
 .vermelho{
   background-color: var(--vermelho);
+  padding: 10px;
 }
 
 
