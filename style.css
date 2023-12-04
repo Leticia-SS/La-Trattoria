@@ -409,7 +409,7 @@ iframe{
 }
 
   .logo{
-    width: 120px;
+    width: 180px;
   }
 
   #divHeader{
@@ -417,7 +417,7 @@ iframe{
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: auto;
+    height: 80px;
     border: black 2px;
   }
 
@@ -432,5 +432,237 @@ iframe{
   .MenuPc{
     display: block;
   }
+
+  
+#logoHome{
+  width: 40%;
+} /* Logo do restaurante da página inicial*/
+
+#frameHome{
+  height: 700px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("imagens/pizzaHome.png");
+  background-size: cover;
+} /* Página Inicial do site */
+
+#frameInicio{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  margin-bottom: 15px;
+} /* Frame de Inicio (Nossa Essência) */
+
+#frameInicioContent{
+  width: 50vw;
+  margin: 20px 35px 20px 0;
+} /* Conteudo do frame de Inicio (Nossa Essência) */
+
+h1{
+  margin-bottom: 30px;
+  font-family: 'GreatVibes';
+  font-size: 60px;
+  color: var(--preto);
+  font-weight: 500;
+} /* Titulo do frame de Inicio (Nossa Essência) */
+
+div#frameInicioContent p{
+  font-family: 'Droid';
+  font-size: 18px;
+  color: var(--preto);
+} /* Paragrafo do frame de Inicio (Nossa Essência) */
+
+#bruschetta{
+  width: 500px;
+  position: absolute;
+  top: 850px;
+  left: -60px;
+  z-index: 1;
+} /* Imagem do Inicio (Bruschetta) */
+
+#vinho{
+  height: 500px;
+  position: absolute;
+  top: 1095px;
+  right: 0;
+  z-index: 1;
+} /* Imagem do Inicio (Vinho) */
+
+
+#frameCardapio{
+  background-color: var(--vermelho);
+  height: 500px;
+  display: flex;
+  align-items: center;
+} /* Frame do Cardapio (Cardapio Executivo) */
+
+#frameCardapioConteudo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 70px;
+} /* Frame do Conteudo do Cardapio (Cardapio Executivo) */
+
+#frameCardapioTextos{
+  width: 50vw;
+  margin: 20px 0 20px 80px;
+  height: 300px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+} /* Div dos textos do Conteudo do Cardapio (Cardapio Executivo) */
+
+div#frameCardapioTextos h2{
+  font-family: 'GreatVibes';
+  font-size: 60px;
+  color: var(--branco);
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 30px;
+} /* Titulo do Conteudo do Cardapio (Cardapio Executivo) */
+
+div#frameCardapioTextos p{
+  font-family: 'Droid';
+  font-size: 18px;
+  color: var(--branco);
+} /* Paragrafo de Conteudo do Cardapio (Cardapio Executivo) */
+
+#botaoCardapio{
+  width: 200px;
+  height: 80px;
+  z-index: 2;
+  font-size: 35px;
+  font-family: 'GreatVibes';
+  color: var(--branco);
+  background-color: var(--verde);
+  box-shadow: var(--preto) 8px 8px 0 0;
+  border: none;
+} /* Botao para pagina de Cardapio (Cardapio Executivo) */
+
+#botaoCardapio:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+} /* Animação botão Cardapio (Cardapio Executivo) */
+
+#ravioli{
+  height: 500px;
+  position: absolute;
+  top: 1500px;
+  left: -250px;
+  z-index: 1;
+} /* Imagem do Inicio (Ravioli) */
+
+#frameReserva{
+  height: 380px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+} /* Frame de Reservas */
+
+#frameReservaConteudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+} /* Frame do Conteudo da Reserva (Reserva) */
+
+#frameReservaTexto{
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  width: 50vw;
+  flex-direction: column;
+  margin: 20px 40px 20px 0;
+} /* Frame dos textos do Conteudo da Reserva (Reserva) */
+
+div#frameReservaTexto h2{
+  margin-bottom: 35px;
+  font-family: 'GreatVibes';
+  font-size: 60px;
+  color: var(--preto);
+  font-weight: 500;
+} /* Frame do titulo da Reserva (Reserva) */
+
+div#frameReservaTexto p{
+  font-family: 'Droid';
+  font-size: 18px;
+  color: var(--preto);
+} /* Frame do paragrafo da Reserva (Reserva) */
+
+#botaoReserva{
+  width: 200px;
+  height: 80px;
+  z-index: 2;
+  font-size: 35px;
+  font-family: 'GreatVibes';
+  color: var(--branco);
+  background-color: var(--vermelho);
+  box-shadow: var(--preto) 8px 8px 0 0;
+  border: none;
+} /* Frame do botao de Reserva (Reserva) */
+
+#botaoReserva:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+} /* Animação botão Reserva (Reserva) */
+
+
+
+#footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--branco);
+  height:fit-content;
+} /* Footer (Footer) */
+
+.footerBoxConteudo{
+  width: fit-content;
+  font-family: 'Droid';
+  margin-bottom: 20px;
+  line-height: 30px;
+} /* Div conteudo do Footer (Footer) */
+
+div.footerBoxConteudo h3{
+  font-size: 20px;
+  font-family: 'Droid';
+  margin-top: 20px;
+} /* Div titulo do conteudo do Footer (Footer) */
+
+div.footerBoxConteudo p{
+  font-size: 14px;
+  font-family: 'Droid';
+} /* Div paragrafo do conteudo do Footer (Footer) */
+
+.divIconsFooter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 200px;
+  margin: 10px;
+} /* Div icones redes sociais do Footer (Footer) */
+
+.iconMedia{
+  height: 60px;
+}
+
+.footerBoxTelefone{
+  width: fit-content;
+} /* Div conteudo do Footer sobre Telefone (Footer) */
+
+.verde{
+  background-color: var(--verde);
+}
+.vermelho{
+  background-color: var(--vermelho);
+}
+
 
     } /* Desktop */
