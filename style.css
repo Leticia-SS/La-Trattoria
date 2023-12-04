@@ -369,12 +369,14 @@ div.footerBoxConteudo p{
   flex-direction: column;
 } /* Frame aba de Formulário e Mapa (Reserva) */
 
-#frameFormulario h2{
+.reservaMapa h2{
   font-family: 'GreatVibes';
   font-size: 30px;
-  color: var(--preto);
+  color: var(--branco);
   font-weight: 500;
-  margin: 15px;
+  background-color: var(--verde);
+  padding: 15px;
+  border-radius: 10px;
 } /* Título aba de Formulário e Mapa (Reserva) */
 
 .reservaMapa{
@@ -382,6 +384,7 @@ div.footerBoxConteudo p{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 15px;
 } /*Div do Frame da Localização */
 
 .mapa{
@@ -396,6 +399,71 @@ iframe{
   width: 100%;
   height: 300px;
 } /* Mapa incorporado */
+
+.reservaFormulario{
+  background-color: var(--verde);
+  color: var(--branco);
+  width: 80vw;
+  margin: 30px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.reservaFormulario h2{
+  font-family: 'GreatVibes';
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 5px;
+}
+
+form{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 5px;
+}
+
+.form-control-submit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+div.form-control-submit button{
+  width: 100px;
+  height: 20px;
+  z-index: 2;
+  font-size: 14px;
+  font-family: 'Droid';
+  color: var(--branco);
+  background-color: var(--vermelho);
+  box-shadow: var(--preto) 4px 4px 0 0;
+  border: none;
+} /* Frame do botao de Reserva (Reserva) */
+
+.botoesSubmit{
+  display: flex;
+  align-items: center;
+}
+
 
 
   }/* Mobile */
