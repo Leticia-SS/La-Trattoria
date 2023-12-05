@@ -553,7 +553,7 @@ div.form-control-submit button{
 h1{
   margin-bottom: 30px;
   font-family: 'GreatVibes';
-  font-size: 60px;
+  font-size: 50px;
   color: var(--preto);
   font-weight: 500;
 } /* Titulo do frame de Inicio (Nossa Essência) */
@@ -607,7 +607,7 @@ div#frameInicioContent p{
 
 div#frameCardapioTextos h2{
   font-family: 'GreatVibes';
-  font-size: 60px;
+  font-size: 50px;
   color: var(--branco);
   font-weight: 500;
   width: fit-content;
@@ -624,7 +624,7 @@ div#frameCardapioTextos p{
   width: 200px;
   height: 80px;
   z-index: 2;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'GreatVibes';
   color: var(--branco);
   background-color: var(--verde);
@@ -671,7 +671,7 @@ div#frameCardapioTextos p{
 div#frameReservaTexto h2{
   margin-bottom: 35px;
   font-family: 'GreatVibes';
-  font-size: 60px;
+  font-size: 50px;
   color: var(--preto);
   font-weight: 500;
 } /* Frame do titulo da Reserva (Reserva) */
@@ -686,7 +686,7 @@ div#frameReservaTexto p{
   width: 200px;
   height: 80px;
   z-index: 2;
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'GreatVibes';
   color: var(--branco);
   background-color: var(--vermelho);
@@ -716,7 +716,7 @@ div#frameReservaTexto p{
 } /* Div conteudo do Footer (Footer) */
 
 div.footerBoxConteudo h3{
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Droid';
 } /* Div titulo do conteudo do Footer (Footer) */
 
@@ -752,5 +752,126 @@ div.footerBoxConteudo p{
   padding: 10px;
 }
 
+
+  /* PÁGINA RESERVA.HTML*/ 
+
+  .frameReservaHome{
+    height: 800px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("imagens/beige-wooden-textured-flooring-background.jpg");
+    background-size: cover;
+    font-family: 'GreatVibes';
+  } /* Frame Inicio da página (Reserva) */
+  
+  .frameReservaHome h1{
+    font-size: 120px;
+  }
+  
+  #frameFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  } /* Frame aba de Formulário e Mapa (Reserva) */
+  
+  .reservaMapa h2{
+    font-family: 'GreatVibes';
+    font-size: 40px;
+    color: var(--branco);
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 10px;
+  } /* Título aba de Formulário e Mapa (Reserva) */
+  
+  .reservaMapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    height: 550px;
+    background-color: var(--vermelho);
+    border-radius: 10px;
+  } /*Div do Frame da Localização */
+  
+  .mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+    width: 50vw;
+  } /* Frame do Mapa */
+  
+  iframe{
+    width: 100%;
+    height: 400px;
+  } /* Mapa incorporado */
+  
+  .reservaFormulario{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    width: 80vw;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    height: 550px;
+  }
+  
+  .reservaFormulario h2{
+    font-family: 'GreatVibes';
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-control{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 5px;
+  }
+  
+  form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input{
+    padding: 5px;
+  }
+  
+  .form-control-submit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  div.form-control-submit button{
+    width: 150px;
+    height: 40px;
+    z-index: 2;
+    font-size: 14px;
+    font-family: 'Droid';
+    color: var(--branco);
+    background-color: var(--verde);
+    box-shadow: var(--preto) 4px 4px 0 0;
+    border: none;
+  } /* Frame do botao de Reserva (Reserva) */
+  
+  div.form-control-submit button:active{
+    box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+  }
 
     } /* Desktop */
