@@ -345,6 +345,22 @@ div.footerBoxConteudo p{
  /* PÁGINA CARDAPIO.HTML*/ 
 
 
+ .frameCardapioHome{
+  height: 300px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("imagens/maincardapio.png");
+  background-size: cover;
+  font-family: 'GreatVibes';
+ } /* Frame Inicio da página (Cardápio) */
+
+ .frameCardapioHome h1{
+  font-size: 60px;
+  color: var(--branco);
+ }
+
   /* PÁGINA RESERVA.HTML*/ 
 
 .frameReservaHome{
