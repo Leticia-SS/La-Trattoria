@@ -964,23 +964,43 @@ div.footerBoxConteudo p{
     justify-content: center;
   }
   
-  .form-control{
+  .form-control, .horaSelect{
     display: flex;
     flex-direction: column;
     font-size: 20px;
     gap: 5px;
   }
-  
+
+  .horaSelect{
+    position: relative;
+  }
+
+  .horaSelect::after{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f017';
+    font-size: 14px;
+    color: var(--preto);
+    right: 8px;
+    position: absolute;
+    pointer-events: none;
+    top: 8px;
+  }
+
   form{
     gap: 20px;
     display: flex;
     flex-direction: column;
   }
   
-  input{
+  input, select {
     padding: 5px;
+    height: 30px;
   }
   
+  select{
+      appearance: none;
+  }
+
   .form-control-submit{
     display: flex;
     flex-direction: row;

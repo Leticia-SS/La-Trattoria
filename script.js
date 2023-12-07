@@ -114,14 +114,3 @@ let dataAtual = new Date();
  let campoData = document.getElementById("data");
  campoData.setAttribute("min", campoDiaAtual);
 
- // Código Hora da parte de Reserva, para bloquear horas não permitidas
-
- if(hora<12){
-    hora = 12
- }
- else if(hora>21){
-    hora = 21
- }
-
- let horaReserva = document.querySelector('#hora')
- horaReserva.value = hora + ":00";
