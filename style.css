@@ -500,7 +500,7 @@ a.cardapioPDF{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex-direction: column;
 } /* Frame aba de Formulário e Mapa (Reserva) */
 
 .reservaMapa h2{
