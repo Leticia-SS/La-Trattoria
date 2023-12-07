@@ -33,10 +33,10 @@ html{
   scroll-margin-top: .8em;
 }
 
-@media only screen and (max-width: 600px) {
   .MenuPc{
     display: none;
   } /* Barra de nav do Desktop */
+
 .MenuMobile{
   display: block;
   display: flex;
@@ -338,9 +338,11 @@ div.footerBoxConteudo p{
 
 .verde{
   background-color: var(--verde);
+  padding: 10px;
 }
 .vermelho{
   background-color: var(--vermelho);
+  padding: 10px;
 }
 
  /* PÁGINA CARDAPIO.HTML*/ 
@@ -364,7 +366,7 @@ div.footerBoxConteudo p{
 
 .containerCardapio{
   background: url(imagens/wooden-background.jpg);
-  padding: 40px;
+  padding: 70px;
 } /* Div do Frame contendo todo o conteudo*/
 
   .galeriaWrapper{
@@ -389,7 +391,6 @@ div.footerBoxConteudo p{
   color: var(--branco);
   background: linear-gradient(to left, transparent 0%, var(--preto) 200%);
   border: none;
-  cursor: pointer;
   opacity: 1;
   transition: all 500ms ease-in-out;
   z-index: 1;
@@ -466,7 +467,6 @@ button.cardapioPDF a{
   background-color: var(--verde);
   font-family: 'GreatVibes';
   box-shadow: var(--preto) 4px 4px 0 0;
-  cursor: pointer;
 }/* Div botao de baixar Cardapio em PDF */
 
 button.cardapioPDF:active{
@@ -496,7 +496,7 @@ button.cardapioPDF:active{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  
 } /* Frame aba de Formulário e Mapa (Reserva) */
 
 .reservaMapa h2{
@@ -552,7 +552,7 @@ iframe{
   justify-content: center;
 }
 
-.form-control{
+.form-control, .horaSelect{
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -565,8 +565,28 @@ form{
   flex-direction: column;
 }
 
-input{
+.horaSelect{
+  position: relative;
+}
+
+.horaSelect::after{
+  font-family: 'Font Awesome 5 Free';
+  content: '\f017';
+  font-size: 14px;
+  color: var(--preto);
+  right: 8px;
+  position: absolute;
+  pointer-events: none;
+  top: 8px;
+}
+
+input, select {
   padding: 5px;
+  height: 30px;
+}
+
+select{
+    appearance: none;
 }
 
 .form-control-submit{
@@ -589,6 +609,11 @@ div.form-control-submit button{
   border: none;
 } /* Frame do botao de Reserva (Reserva) */
 
+div.form-control-submit button:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+transform: translateY(2px) translateX(2px);
+}
+
 .botoesSubmit{
   display: flex;
   align-items: center;
@@ -596,569 +621,321 @@ div.form-control-submit button{
 
 
 
-  }/* Mobile */
+/* Final Mobile */
 
   @media only screen and (min-width: 600px) {
 
-.divLogo{
-  display: flex;
-    justify-content: left;
-    align-items: left;
-}
 
-  .logo{
-    width: 180px;
-  }
-
-  #divHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 80px;
-    border: black 2px;
-    margin: 0 60px 0 60px;
-  }
-
-  ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  a{
-    text-decoration: none;
-    font-family: 'GreatVibes';
-    color: var(--vermelho);
-    font-size: 30px;
-  }
-
-  li{
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .MenuMobile{
-    display: none;
-  }
-
-  .MenuPc{
-    display: flex;
-  }
-
-  .logoMenuDesktop{
-    height: 80px;
+    .divLogo{
+      justify-content: left;
+      align-items: left;
   }
   
-#logoHome{
-  width: 500px;
-} /* Logo do restaurante da página inicial*/
-
-#frameHome{
-  height: 900px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("imagens/pizzaHome.png");
-  background-size: cover;
-} /* Página Inicial do site */
-
-#frameInicio{
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: space-around;
-} /* Frame de Inicio (Nossa Essência) */
-
-#frameInicioContent{
-  width: 55vw;
-  padding: 20px 80px 20px 0;
-} /* Conteudo do frame de Inicio (Nossa Essência) */
-
-h1{
-  margin-bottom: 30px;
-  font-family: 'GreatVibes';
-  font-size: 50px;
-  color: var(--preto);
-  font-weight: 500;
-} /* Titulo do frame de Inicio (Nossa Essência) */
-
-div#frameInicioContent p{
-  font-family: 'Droid';
-  font-size: 18px;
-  color: var(--preto);
-} /* Paragrafo do frame de Inicio (Nossa Essência) */
-
-#bruschetta{
-  width: 500px;
-  position: absolute;
-  top: 1050px;
-  left: -60px;
-  z-index: 1;
-} /* Imagem do Inicio (Bruschetta) */
-
-#vinho{
-  height: 500px;
-  position: absolute;
-  top: 1380px;
-  right: 0;
-  z-index: 1;
-} /* Imagem do Inicio (Vinho) */
-
-
-#frameCardapio{
-  background-color: var(--vermelho);
-  height: 500px;
-  display: flex;
-  align-items: center;
-} /* Frame do Cardapio (Cardapio Executivo) */
-
-#frameCardapioConteudo{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 100px;
-} /* Frame do Conteudo do Cardapio (Cardapio Executivo) */
-
-#frameCardapioTextos{
-  width: 55vw;
-  padding: 20px 0 20px 80px;
-  height: 300px;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-} /* Div dos textos do Conteudo do Cardapio (Cardapio Executivo) */
-
-div#frameCardapioTextos h2{
-  font-family: 'GreatVibes';
-  font-size: 50px;
-  color: var(--branco);
-  font-weight: 500;
-  width: fit-content;
-  margin-bottom: 30px;
-} /* Titulo do Conteudo do Cardapio (Cardapio Executivo) */
-
-div#frameCardapioTextos p{
-  font-family: 'Droid';
-  font-size: 18px;
-  color: var(--branco);
-} /* Paragrafo de Conteudo do Cardapio (Cardapio Executivo) */
-
-#botaoCardapio{
-  width: 200px;
-  height: 80px;
-  z-index: 2;
-  font-size: 30px;
-  font-family: 'GreatVibes';
-  color: var(--branco);
-  background-color: var(--verde);
-  box-shadow: var(--preto) 8px 8px 0 0;
-  border: none;
-  cursor: pointer;
-} /* Botao para pagina de Cardapio (Cardapio Executivo) */
-
-#botaoCardapio:active{
-  box-shadow: var(--preto) 2px 2px 0 0;
-  transform: translateY(2px) translateX(2px);
-} /* Animação botão Cardapio (Cardapio Executivo) */
-
-#ravioli{
-  height: 520px;
-  position: absolute;
-  top: 1870px;
-  left: -230px;
-  z-index: 1;
-} /* Imagem do Inicio (Ravioli) */
-
-#frameReserva{
-  height: 500px;
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-end;
-} /* Frame de Reservas */
-
-#frameReservaConteudo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-} /* Frame do Conteudo da Reserva (Reserva) */
-
-#frameReservaTexto{
-  display: flex;
-  justify-content: right;
-  align-items: start;
-  width: 55vw;
-  padding: 20px 80px 20px 0;
-  flex-direction: column;
-} /* Frame dos textos do Conteudo da Reserva (Reserva) */
-
-div#frameReservaTexto h2{
-  margin-bottom: 35px;
-  font-family: 'GreatVibes';
-  font-size: 50px;
-  color: var(--preto);
-  font-weight: 500;
-} /* Frame do titulo da Reserva (Reserva) */
-
-div#frameReservaTexto p{
-  font-family: 'Droid';
-  font-size: 18px;
-  color: var(--preto);
-} /* Frame do paragrafo da Reserva (Reserva) */
-
-#botaoReserva{
-  width: 200px;
-  height: 80px;
-  z-index: 2;
-  font-size: 30px;
-  font-family: 'GreatVibes';
-  color: var(--branco);
-  background-color: var(--vermelho);
-  box-shadow: var(--preto) 8px 8px 0 0;
-  border: none;
-  cursor: pointer;
-} /* Frame do botao de Reserva (Reserva) */
-
-#botaoReserva:active{
-  box-shadow: var(--preto) 2px 2px 0 0;
-  transform: translateY(2px) translateX(2px);
-} /* Animação botão Reserva (Reserva) */
-
-
-
-#footer{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: var(--branco);
-  height:fit-content;
-} /* Footer (Footer) */
-
-.footerBoxConteudo{
-  width: fit-content;
-  font-family: 'Droid';
-  line-height: 30px;
-} /* Div conteudo do Footer (Footer) */
-
-div.footerBoxConteudo h3{
-  font-size: 18px;
-  font-family: 'Droid';
-} /* Div titulo do conteudo do Footer (Footer) */
-
-div.footerBoxConteudo p{
-  font-size: 14px;
-  font-family: 'Droid';
-} /* Div paragrafo do conteudo do Footer (Footer) */
-
-.divIconsFooter{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 200px;
-  margin: 10px;
-} /* Div icones redes sociais do Footer (Footer) */
-
-.iconMedia{
-  height: 60px;
-}
-
-.footerBoxTelefone{
-  width: fit-content;
-} /* Div conteudo do Footer sobre Telefone (Footer) */
-
-.verde{
-  background-color: var(--verde);
-  padding: 10px;
-}
-.vermelho{
-  background-color: var(--vermelho);
-  padding: 10px;
-}
-
-
-  /* PÁGINA RESERVA.HTML*/ 
-
-  .frameReservaHome{
-    height: 800px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("imagens/beige-wooden-textured-flooring-background.jpg");
-    background-size: cover;
-    font-family: 'GreatVibes';
-  } /* Frame Inicio da página (Reserva) */
+    .logo{
+      width: 180px;
+    }
   
-  .frameReservaHome h1{
-    font-size: 120px;
-  }
+    #divHeader{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      height: 80px;
+      border: black 2px;
+      margin: 0 60px 0 60px;
+    }
   
-  #frameFormulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-  } /* Frame aba de Formulário e Mapa (Reserva) */
+    ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
-  .reservaMapa h2{
-    font-family: 'GreatVibes';
-    font-size: 40px;
-    color: var(--branco);
-    font-weight: 500;
-    padding: 15px;
-    border-radius: 10px;
-  } /* Título aba de Formulário e Mapa (Reserva) */
+    a{
+      color: var(--vermelho);
+    }
   
-  .reservaMapa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 30px;
-    height: 550px;
-    background-color: var(--vermelho);
-    border-radius: 10px;
-  } /*Div do Frame da Localização */
+    li{
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   
-  .mapa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:15px;
-    width: 50vw;
-  } /* Frame do Mapa */
+    .MenuMobile{
+      display: none;
+    }
   
-  iframe{
-    width: 100%;
+    .MenuPc{
+      display: flex;
+    }
+  
+    .logoMenuDesktop{
+      height: 80px;
+    }
+    
+  #logoHome{
+    width: 500px;
+  } /* Logo do restaurante da página inicial*/
+  
+  #frameHome{
+    height: 900px;
+  } /* Página Inicial do site */
+  
+  #frameInicio{
     height: 400px;
-  } /* Mapa incorporado */
-  
-  .reservaFormulario{
-    background-color: var(--vermelho);
-    color: var(--branco);
-    width: 80vw;
-    margin: 30px;
-    border-radius: 10px;
-    padding: 30px;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    height: 550px;
-  }
-  
-  .reservaFormulario h2{
-    font-family: 'GreatVibes';
-    font-size: 40px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .form-control, .horaSelect{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    gap: 5px;
-  }
-
-  .horaSelect{
-    position: relative;
-  }
-
-  .horaSelect::after{
-    font-family: 'Font Awesome 5 Free';
-    content: '\f017';
-    font-size: 14px;
-    color: var(--preto);
-    right: 8px;
-    position: absolute;
-    pointer-events: none;
-    top: 8px;
-  }
-
-  form{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input, select {
-    padding: 5px;
-    height: 30px;
-  }
-  
-  select{
-      appearance: none;
-  }
-
-  .form-control-submit{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    gap: 10px;
-  }
+    margin: 0;
+  } /* Frame de Inicio (Nossa Essência) */
   
-  div.form-control-submit button{
-    width: 150px;
-    height: 40px;
-    z-index: 2;
-    font-size: 14px;
-    font-family: 'Droid';
-    color: var(--branco);
-    background-color: var(--verde);
-    box-shadow: var(--preto) 5px 5px 0 0;
-    border: none;
+  #frameInicioContent{
+    width: 55vw;
+    padding: 20px 80px 20px 0;
+  } /* Conteudo do frame de Inicio (Nossa Essência) */
+  
+  h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+  } /* Titulo do frame de Inicio (Nossa Essência) */
+  
+  div#frameInicioContent p{
+    font-size: 18px;
+  } /* Paragrafo do frame de Inicio (Nossa Essência) */
+  
+  #bruschetta{
+    width: 500px;
+    top: 1050px;
+    left: -60px;
+  } /* Imagem do Inicio (Bruschetta) */
+  
+  #vinho{
+    height: 500px;
+    top: 1380px;
+  } /* Imagem do Inicio (Vinho) */
+  
+  
+  #frameCardapio{
+    height: 500px;
+  } /* Frame do Cardapio (Cardapio Executivo) */
+  
+  #frameCardapioConteudo{
+    justify-content: space-around;
+    gap: 100px;
+  } /* Frame do Conteudo do Cardapio (Cardapio Executivo) */
+  
+  #frameCardapioTextos{
+    width: 55vw;
+    padding: 20px 0 20px 80px;
+    height: 300px;
+    justify-content: center;
+  } /* Div dos textos do Conteudo do Cardapio (Cardapio Executivo) */
+  
+  div#frameCardapioTextos h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+  } /* Titulo do Conteudo do Cardapio (Cardapio Executivo) */
+  
+  div#frameCardapioTextos p{
+    font-size: 18px;
+  } /* Paragrafo de Conteudo do Cardapio (Cardapio Executivo) */
+  
+  #botaoCardapio{
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    box-shadow: var(--preto) 8px 8px 0 0;
+    cursor: pointer;
+  } /* Botao para pagina de Cardapio (Cardapio Executivo) */
+  
+  #ravioli{
+    width: 750px;
+    top: 1870px;
+    left: -230px;
+  } /* Imagem do Inicio (Ravioli) */
+  
+  #frameReserva{
+    height: 500px;
+    align-items: stretch;
+    justify-content: flex-end;
+    margin: 0;
+  } /* Frame de Reservas */
+  
+  #frameReservaConteudo{
+    justify-content: center;
+    gap: 70px;
+  } /* Frame do Conteudo da Reserva (Reserva) */
+  
+  #frameReservaTexto{
+    width: 55vw;
+    padding: 20px 80px 20px 0;
+  } /* Frame dos textos do Conteudo da Reserva (Reserva) */
+  
+  div#frameReservaTexto h2{
+    margin-bottom: 35px;
+    font-size: 50px;
+  } /* Frame do titulo da Reserva (Reserva) */
+  
+  div#frameReservaTexto p{
+    font-size: 18px;
+  } /* Frame do paragrafo da Reserva (Reserva) */
+  
+  #botaoReserva{
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    box-shadow: var(--preto) 8px 8px 0 0;
     cursor: pointer;
   } /* Frame do botao de Reserva (Reserva) */
   
-  div.form-control-submit button:active{
-    box-shadow: var(--preto) 2px 2px 0 0;
-  transform: translateY(2px) translateX(2px);
-  }
-
- /* PÁGINA CARDAPIO.HTML*/ 
-
- .frameCardapioHome{
-  height: 800px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("imagens/maincardapio.png");
-  background-size: cover;
-  font-family: 'GreatVibes';
- } /* Frame Inicio da página (Cardápio) */
-
- .frameCardapioHome h1{
-  font-size: 120px;
-  color: var(--branco);
- }
-
-.containerCardapio{
-  background: url(imagens/wooden-background.jpg);
-  padding: 80px;
-} /* Div do Frame contendo todo o conteudo*/
-
-  .galeriaWrapper{
-    overflow-x: auto;
-  } /* Div da galeria de fotos*/
-
-  .galeria{
+  #footer{
+    justify-content: space-evenly;
+    align-items: center;
+  } /* Footer (Footer) */
+  
+  .footerBoxConteudo{
+    line-height: 30px;
+  } /* Div conteudo do Footer (Footer) */
+  
+  div.footerBoxConteudo h3{
+    font-size: 18px;
+  } /* Div titulo do conteudo do Footer (Footer) */
+  
+  div.footerBoxConteudo p{
+    font-size: 14px;
+  } /* Div paragrafo do conteudo do Footer (Footer) */
+  
+  .divIconsFooter{
     display: flex;
-    flex-flow: row nowrap;
-    gap: 40px;
-  } /* Div das fotos*/
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 200px;
+    margin: 10px;
+  } /* Div icones redes sociais do Footer (Footer) */
+  
+  .iconMedia{
+    width: 60px;
+  }
+  
+  #footerLogo{
+    height: fit-content;
+  } /* Div logo do site no Footer (Footer) */
 
- .setaDireita, .setaEsquerda {
-  position: absolute;
-  top: 880px;
-  left: 0;
-  right: auto;
-  font-size: 20px;
-  line-height: 550px;
-  width: 40px;
-  text-align: center;
-  color: var(--branco);
-  background: linear-gradient(to left, transparent 0%, var(--preto) 200%);
-  border: none;
-  cursor: pointer;
-  opacity: 0.1;
-  transition: all 500ms ease-in-out;
-  z-index: 1;
- } /* Setas para passar fotos*/
 
- .setaDireita{
-  left: auto;
-  right: 0;
-  background: linear-gradient(to right, transparent 0%, var(--preto) 200%);
- }
-
-.setaDireita:hover, .setaEsquerda:hover {
-  opacity: 1;
-} /* Efeito de passar o mouse nas setas*/
-
-.cardapioImgs{
-  width: 300px;
-  height: 450px;
-  border-radius: 5px;
-  flex-shrink: 0;
-  opacity: 0.7;
-  transition: all 500ms ease-in-out;
-} /* Imagens da galeria de fotos*/
-
-.cardapioImgs-Current{
-  opacity: 1;
-  box-shadow: 0 0 15px var(--preto);
-} 
-
-/* Código de remover scroll bar pego da W3schools 
-https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-
-/* Esconder scrollbar do navegador Chrome, Safari e Opera */
-.galeriaWrapper::-webkit-scrollbar {
-  display: none;
-}
-
-/* Esconder scrollbar do navegador IE, Edge e Firefox */
-.galeriaWrapper {
-  -ms-overflow-style: none; /* IE e Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.cardCardapio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.cardImg{
-  width: 80%;
-} /* Imagem do Menu a ser aberto */
-
-.esconder{
-  display: none;
-}
-
-.baixarCardapio{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} /* Div botao de baixar Cardapio em PDF */
-
-button.cardapioPDF a{
-  color: var(--branco);
-  font-weight: 500;
-  font-size: 35px;
-}
-
-.cardapioPDF{
-  border-radius: 30px;
-  border: none;
-  height: 120px;
-  width: 350px;
-  background-color: var(--verde);
-  font-family: 'GreatVibes';
-  box-shadow: var(--preto) 8px 8px 0 0;
-  cursor: pointer;
-}/* Div botao de baixar Cardapio em PDF */
-
-button.cardapioPDF:active{
-  box-shadow: var(--preto) 2px 2px 0 0;
-  transform: translateY(2px) translateX(2px);
-}
+    /* PÁGINA RESERVA.HTML*/ 
+  
+    .frameReservaHome{
+      height: 800px;
+    } /* Frame Inicio da página (Reserva) */
+    
+    .frameReservaHome h1{
+      font-size: 120px;
+    }
+    
+    #frameFormulario{
+      flex-direction: row;
+      height: 600px;
+    } /* Frame aba de Formulário e Mapa (Reserva) */
+    
+    .reservaMapa h2{
+      font-size: 40px;
+    } /* Título aba de Formulário e Mapa (Reserva) */
+    
+    .reservaMapa{
+      margin: 30px;
+      height: 550px;
+      background-color: var(--vermelho);
+      border-radius: 10px;
+    } /*Div do Frame da Localização */
+    
+    .mapa{
+      padding:15px;
+      width: 50vw;
+    } /* Frame do Mapa */
+    
+    iframe{
+      height: 400px;
+    } /* Mapa incorporado */
+    
+    .reservaFormulario{
+      background-color: var(--vermelho);
+      height: 550px;
+    }
+    
+    .reservaFormulario h2{
+      font-size: 40px;
+      margin: 0;
+    }
+    
+    .form-control, .horaSelect{
+      font-size: 20px;
+    }
+  
+    .form-control-submit{
+      justify-content: space-around;
+    }
+    
+    div.form-control-submit button{
+      width: 150px;
+      height: 40px;
+      background-color: var(--verde);
+      box-shadow: var(--preto) 5px 5px 0 0;
+      cursor: pointer;
+    } /* Frame do botao de Reserva (Reserva) */
+    
+  
+  
+   /* PÁGINA CARDAPIO.HTML*/ 
+  
+   .frameCardapioHome{
+    height: 800px;
+   } /* Frame Inicio da página (Cardápio) */
+  
+   .frameCardapioHome h1{
+    font-size: 120px;
+   }
+  
+  .containerCardapio{
+    padding: 80px;
+  } /* Div do Frame contendo todo o conteudo*/
+  
+    .galeria{
+      gap: 40px;
+    } /* Div das fotos*/
+  
+   .setaDireita, .setaEsquerda {
+    top: 880px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0.1;
+   } /* Setas para passar fotos*/
+  
+  .setaDireita:hover, .setaEsquerda:hover {
+    opacity: 1;
+  } /* Efeito de passar o mouse nas setas*/
+  
+  .cardCardapio{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .cardImg{
+    width: 80%;
+  } /* Imagem do Menu a ser aberto */
+  
+  
+  button.cardapioPDF a{
+    font-size: 35px;
+  }
+  
+  .cardapioPDF{
+    height: 120px;
+    width: 350px;
+    box-shadow: var(--preto) 8px 8px 0 0;
+    cursor: pointer;
+  }/* Div botao de baixar Cardapio em PDF */
+  
 
     } /* Desktop */
