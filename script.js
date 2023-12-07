@@ -63,10 +63,7 @@ btnControls.forEach((btnControl) => {
         itens.forEach((item) =>{
             item.classList.remove('cardapioImgs-Current')  // Remove a classe ao clicar
 
-            itens[currentItem].scrollIntoView({  // Centraliza o item clicado com smooth behavior
-                behavior: "smooth",
-                inline: "center",
-            });
+            itens[currentItem].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 
             itens[currentItem].classList.add('cardapioImgs-Current'); // Adiciona a classe 
         })
@@ -125,6 +122,6 @@ let dataAtual = new Date();
  else if(hora>21){
     hora = 21
  }
- 
+
  let horaReserva = document.querySelector('#hora')
  horaReserva.value = hora + ":00";
