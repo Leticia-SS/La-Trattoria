@@ -483,13 +483,14 @@ button.cardapioPDF:active{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("imagens/beige-wooden-textured-flooring-background.jpg");
+  background: url("imagens/Reserva-restaurante-vazio.png");
   background-size: cover;
   font-family: 'GreatVibes';
 } /* Frame Inicio da página (Reserva) */
 
 .frameReservaHome h1{
   font-size: 60px;
+
 }
 
 #frameFormulario{
@@ -619,9 +620,8 @@ transform: translateY(2px) translateX(2px);
   align-items: center;
 }
 
-
-
 /* Final Mobile */
+
 
   @media only screen and (min-width: 600px) {
 
