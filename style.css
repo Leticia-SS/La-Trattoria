@@ -453,7 +453,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   justify-content: center;
 } /* Div botao de baixar Cardapio em PDF */
 
-button.cardapioPDF a{
+a.cardapioPDF{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--branco);
   font-weight: 500;
   font-size: 25px;
@@ -469,7 +472,7 @@ button.cardapioPDF a{
   box-shadow: var(--preto) 4px 4px 0 0;
 }/* Div botao de baixar Cardapio em PDF */
 
-button.cardapioPDF:active{
+.cardapioPDF:active{
   box-shadow: var(--preto) 2px 2px 0 0;
   transform: translateY(2px) translateX(2px);
 }
@@ -628,7 +631,7 @@ transform: translateY(2px) translateX(2px);
 
     .divLogo{
       justify-content: left;
-      align-items: left;
+      align-items: start;
   }
   
     .logo{
@@ -926,7 +929,7 @@ transform: translateY(2px) translateX(2px);
   } /* Imagem do Menu a ser aberto */
   
   
-  button.cardapioPDF a{
+  a.cardapioPDF{
     font-size: 35px;
   }
   
