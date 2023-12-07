@@ -72,7 +72,7 @@ btnControls.forEach((btnControl) => {
 })
 
 
-// Código abrir e fechar Menu
+// Código abrir e fechar Páginas do Cardápio
 
 let conteudoMenu = document.querySelectorAll('.cardImg')
 
@@ -110,7 +110,7 @@ let dataAtual = new Date();
  
  // Código Data da parte de Reserva, para bloquear datas que já passaram
  
- let campoDiaAtual = ano + "-" + (mes<10 ? "0" : "") + mes + "-" + (dia<10? "0" : "") + dia; //De acordo com as conformidades do navegador , ele não reconhece dia ou mês que não tenha o 0 antes, como 05 ou 08
+ let campoDiaAtual = ano + "-" + (mes<10 ? "0" : "") + mes + "-" + (dia<10? "0" : "") + dia;  //De acordo com as conformidades do navegador , ele não reconhece dia ou mês que não tenha o 0 antes, como 05 ou 08
  let campoData = document.getElementById("data");
  campoData.setAttribute("min", campoDiaAtual);
 
