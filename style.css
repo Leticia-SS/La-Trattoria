@@ -28,6 +28,7 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
 :target{
   scroll-margin-top: .8em;
 }
@@ -361,6 +362,119 @@ div.footerBoxConteudo p{
   color: var(--branco);
  }
 
+.containerCardapio{
+  background: url(imagens/wooden-background.jpg);
+  padding: 40px;
+} /* Div do Frame contendo todo o conteudo*/
+
+  .galeriaWrapper{
+    overflow-x: auto;
+  } /* Div da galeria de fotos*/
+
+  .galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+  } /* Div das fotos*/
+
+ .setaDireita, .setaEsquerda {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  right: auto;
+  font-size: 20px;
+  line-height: 550px;
+  width: 70px;
+  text-align: center;
+  color: var(--branco);
+  background: linear-gradient(to left, transparent 0%, var(--preto) 200%);
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+ } /* Setas para passar fotos*/
+
+ .setaDireita{
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, var(--preto) 200%);
+ }
+
+.cardapioImgs{
+  width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: all 500ms ease-in-out;
+} /* Imagens da galeria de fotos*/
+
+.cardapioImgs-Current{
+  opacity: 1;
+  box-shadow: 0 0 15px var(--preto);
+} 
+
+/* Código de remover scroll bar pego da W3schools 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+
+/* Esconder scrollbar do navegador Chrome, Safari e Opera */
+.galeriaWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconder scrollbar do navegador IE, Edge e Firefox */
+.galeriaWrapper {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardCardapio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cardImg{
+  width: 400px;
+} /* Imagem do Menu a ser aberto */
+
+.esconder{
+  display: none;
+}
+
+.baixarCardapio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /* Div botao de baixar Cardapio em PDF */
+
+button.cardapioPDF a{
+  color: var(--branco);
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.cardapioPDF{
+  border-radius: 30px;
+  border: none;
+  height: 60px;
+  width: 250px;
+  background-color: var(--verde);
+  font-family: 'GreatVibes';
+  box-shadow: var(--preto) 4px 4px 0 0;
+  cursor: pointer;
+}/* Div botao de baixar Cardapio em PDF */
+
+button.cardapioPDF:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+}
+
+
   /* PÁGINA RESERVA.HTML*/ 
 
 .frameReservaHome{
@@ -646,6 +760,7 @@ div#frameCardapioTextos p{
   background-color: var(--verde);
   box-shadow: var(--preto) 8px 8px 0 0;
   border: none;
+  cursor: pointer;
 } /* Botao para pagina de Cardapio (Cardapio Executivo) */
 
 #botaoCardapio:active{
@@ -708,6 +823,7 @@ div#frameReservaTexto p{
   background-color: var(--vermelho);
   box-shadow: var(--preto) 8px 8px 0 0;
   border: none;
+  cursor: pointer;
 } /* Frame do botao de Reserva (Reserva) */
 
 #botaoReserva:active{
@@ -881,13 +997,148 @@ div.footerBoxConteudo p{
     font-family: 'Droid';
     color: var(--branco);
     background-color: var(--verde);
-    box-shadow: var(--preto) 4px 4px 0 0;
+    box-shadow: var(--preto) 5px 5px 0 0;
     border: none;
+    cursor: pointer;
   } /* Frame do botao de Reserva (Reserva) */
   
   div.form-control-submit button:active{
     box-shadow: var(--preto) 2px 2px 0 0;
   transform: translateY(2px) translateX(2px);
   }
+
+ /* PÁGINA CARDAPIO.HTML*/ 
+
+ .frameCardapioHome{
+  height: 800px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("imagens/maincardapio.png");
+  background-size: cover;
+  font-family: 'GreatVibes';
+ } /* Frame Inicio da página (Cardápio) */
+
+ .frameCardapioHome h1{
+  font-size: 120px;
+  color: var(--branco);
+ }
+
+.containerCardapio{
+  background: url(imagens/wooden-background.jpg);
+  padding: 80px;
+} /* Div do Frame contendo todo o conteudo*/
+
+  .galeriaWrapper{
+    overflow-x: auto;
+  } /* Div da galeria de fotos*/
+
+  .galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+  } /* Div das fotos*/
+
+ .setaDireita, .setaEsquerda {
+  position: absolute;
+  top: 880px;
+  left: 0;
+  right: auto;
+  font-size: 20px;
+  line-height: 550px;
+  width: 40px;
+  text-align: center;
+  color: var(--branco);
+  background: linear-gradient(to left, transparent 0%, var(--preto) 200%);
+  border: none;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+ } /* Setas para passar fotos*/
+
+ .setaDireita{
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, var(--preto) 200%);
+ }
+
+.setaDireita:hover, .setaEsquerda:hover {
+  opacity: 1;
+} /* Efeito de passar o mouse nas setas*/
+
+.cardapioImgs{
+  width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: all 500ms ease-in-out;
+} /* Imagens da galeria de fotos*/
+
+.cardapioImgs-Current{
+  opacity: 1;
+  box-shadow: 0 0 15px var(--preto);
+} 
+
+/* Código de remover scroll bar pego da W3schools 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+
+/* Esconder scrollbar do navegador Chrome, Safari e Opera */
+.galeriaWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconder scrollbar do navegador IE, Edge e Firefox */
+.galeriaWrapper {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardCardapio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cardImg{
+  width: 80%;
+} /* Imagem do Menu a ser aberto */
+
+.esconder{
+  display: none;
+}
+
+.baixarCardapio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /* Div botao de baixar Cardapio em PDF */
+
+button.cardapioPDF a{
+  color: var(--branco);
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.cardapioPDF{
+  border-radius: 30px;
+  border: none;
+  height: 120px;
+  width: 350px;
+  background-color: var(--verde);
+  font-family: 'GreatVibes';
+  box-shadow: var(--preto) 8px 8px 0 0;
+  cursor: pointer;
+}/* Div botao de baixar Cardapio em PDF */
+
+button.cardapioPDF:active{
+  box-shadow: var(--preto) 2px 2px 0 0;
+  transform: translateY(2px) translateX(2px);
+}
 
     } /* Desktop */
