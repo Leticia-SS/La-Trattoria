@@ -1,4 +1,4 @@
-# Italian Restaurant Website
+# Restaurant Website
 
 This project is a university assignment designed to create a website for a fictional Italian restaurant. The restaurant does not exist, and the names, logos, and branding used within this project are purely for educational purposes.
 
